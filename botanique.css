@@ -1,0 +1,18 @@
+@font-face{
+    font-family: 'GeoSansLight';
+    src: url('polices/GeosansLight.ttf') format('TrueType');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'Subscribers';
+    src: url('polices/SUBSCRIBER-Regular.otf') format('OpenType');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'Marker SD';
+    src: url('polices/Marker SD.ttf') format('TrueType');
+    font-weight: normal;
+    font-style: normal;
+}
