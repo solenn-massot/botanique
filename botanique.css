@@ -152,4 +152,11 @@ footer{
     border-radius:20px;
     text-align:center;
 }
-
+/*------------ACCUEIL----------*/
+#fond-accueil{
+    background-image: url("images/accueil.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
