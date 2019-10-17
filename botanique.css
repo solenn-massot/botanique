@@ -1,3 +1,4 @@
+/*---------------POLICES----------------*/
 @font-face{
     font-family: 'GeoSansLight';
     src: url('polices/GeosansLight.ttf') format('TrueType');
@@ -16,3 +17,139 @@
     font-weight: normal;
     font-style: normal;
 }
+/*-------------------HEADER----------------*/
+header{
+    width:98vw;
+    height:25%;
+    background-image: url("images/header.jpg");
+    background-attachment: scroll;
+    background-position: center; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius:15px;
+    display: flex;
+    justify-content: space-between;
+}
+#nom-header{
+    font-family: 'Subscribers';
+    color:white;
+    font-size:90px;
+    text-align:center;
+    display: flex;
+    justify-content: center;
+    margin-top:20px;
+    margin-left:-50px;
+}
+#onglets-header1{
+    font-family: 'Marker SD';
+    color:white;
+    font-size: 30px;
+    display: flex;
+    text-align:center;
+    flex-direction: column;
+    margin-left:70px;
+    margin-top:30px;
+}
+#onglets-header2{
+    font-family: 'Marker SD';
+    color:#CAB99F;
+    font-size: 22px;
+    display: flex;
+    text-align:center;
+    flex-direction: column;
+    margin-right:100px;
+    margin-top:10px;
+}
+.link-header{
+    text-decoration:none;
+    color:#3E4036;
+    margin-bottom:-8px;
+}
+.link-header:hover{
+    text-decoration:underline;
+    color: #7FA65B;
+}
+.link-header:visited{
+    text-decoration: none;
+}
+.link-header1{
+    color:#FFF4DB;
+    text-decoration:none;
+}
+.link-header1:visited{
+    text-decoration: none;
+}
+.link-header1:hover{
+    text-decoration:underline;
+    color: #7FA65B;
+}
+/*----------------FOOTER------------*/
+footer{
+    width:98vw;
+    height:25%;
+    background-image: url("images/footer.jpg");
+    background-attachment: scroll;
+    background-position: center; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius:15px;
+    display: flex;
+    justify-content: space-between;
+}
+#nom-footer{
+    font-family: 'Subscribers';
+    color:white;
+    font-size:100px;
+    text-align:center;
+    display: flex;
+    justify-content: right;
+    margin-top:20px;
+    margin-left:20px;
+}
+#onglets-footer1{
+    font-family: 'Marker SD';
+    color:white;
+    font-size: 30px;
+    display: flex;
+    text-align:center;
+    flex-direction: column;
+    margin-left:200px;
+    margin-top:30px;
+}
+#onglets-footer2{
+    font-family: 'Marker SD';
+    color:#CAB99F;
+    font-size: 22px;
+    display: flex;
+    text-align:center;
+    flex-direction: column;
+    margin-right:100px;
+    margin-top:10px;
+}
+.link-footer{
+    text-decoration:none;
+    color:#3E4036;
+    margin-bottom:-8px;
+}
+.link-footer:hover{
+    text-decoration: underline;
+    color: #7FA65B;
+}
+.link-footer1{
+    text-decoration:none;
+    color:#3E4036;
+}
+.link-footer1:hover{
+    text-decoration: underline;
+    color: #7FA65B;
+}
+/*---------TITRE COMMUN-------*/
+.titre-commun{
+    background-color:rgba(90, 144, 79, 0.603);
+    font-family: 'Subscribers';
+    font-size: 30px;
+    color:white;
+    border-radius:20px;
+    text-align:center;
+}
+
