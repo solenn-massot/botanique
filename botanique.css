@@ -246,4 +246,69 @@ footer{
     border-radius: 15px;
     text-align:center;
 }
+/*-------------ARBUSTES--------------*/
+#fond-arbustes{
+    background-image:url("images/arbuste.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#description-arbustes{
+    font-family: 'GeoSansLight';
+    font-size:20px;
+    background-color:rgba(255, 255, 255, 0.5);
+    color:black;
+    border-radius: 15px;
+    text-align:center;
+}
+.arbuste {
+    width:300px;
+    height:450px;
+    position:relative;
+  }
+  
+  .img-arbuste {
+    width:100%;
+    height:450px;
+    vertical-align:top;
+  }
+  
+  .caption-arbuste {
+      height:100%;
+  transition:all 1s;
+  opacity:0;
+  background-color: rgba(255, 255, 255, 0.75) ;
+  text-align:center;
+  position:absolute;
+  bottom:0;
+    left:0;
+  right:0;
+  }
+  
+  .arbuste:hover .caption-arbuste {
+  opacity:1;
+  }
+
+  .titre-arbuste{
+    font-family: 'Subscribers';
+    font-size:4em;
+    text-decoration: underline;
+    margin-bottom: -10px;
+    margin-top:17px;
+  }
+  .titre-arbuste2{
+    font-family: 'Subscribers';
+    font-size:40px;
+    font-style: italic;
+  }
+  .arbuste{
+    font-family: 'GeoSansLight';
+    font-size:18px;
+  }
+.contain-arbuste1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
