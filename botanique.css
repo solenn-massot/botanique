@@ -1,3 +1,4 @@
+/********************* Polices ****************/
 @font-face{
     font-family: 'GeoSansLight';
     src: url('polices/GeosansLight.ttf') format('TrueType');
@@ -15,4 +16,247 @@
     src: url('polices/Marker SD.ttf') format('TrueType');
     font-weight: normal;
     font-style: normal;
+}
+
+/*-------------------HEADER----------------*/
+header{
+    width:98vw;
+    height:25%;
+    background-image: url("images/header.jpg");
+    background-attachment: scroll;
+    background-position: center; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius:15px;
+    display: flex;
+    justify-content: space-between;
+}
+#nom-header{
+    font-family: 'Subscribers';
+    color:white;
+    font-size:90px;
+    text-align:center;
+    display: flex;
+    justify-content: center;
+    margin-top:20px;
+    margin-left:-50px;
+}
+#onglets-header1{
+    font-family: 'Marker SD';
+    color:white;
+    font-size: 30px;
+    display: flex;
+    text-align:center;
+    flex-direction: column;
+    margin-left:70px;
+    margin-top:30px;
+}
+#onglets-header2{
+    font-family: 'Marker SD';
+    color:#CAB99F;
+    font-size: 22px;
+    display: flex;
+    text-align:center;
+    flex-direction: column;
+    margin-right:100px;
+    margin-top:10px;
+}
+.link-header{
+    text-decoration:none;
+    color:#3E4036;
+    margin-bottom:-8px;
+}
+.link-header:hover{
+    text-decoration:underline;
+    color: #7FA65B;
+}
+.link-header:visited{
+    text-decoration: none;
+}
+.link-header1{
+    color:#FFF4DB;
+    text-decoration:none;
+}
+.link-header1:visited{
+    text-decoration: none;
+}
+.link-header1:hover{
+    text-decoration:underline;
+    color: #7FA65B;
+}
+/*----------------FOOTER------------*/
+footer{
+    width:98vw;
+    height:25%;
+    background-image: url("images/footer.jpg");
+    background-attachment: scroll;
+    background-position: center; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius:15px;
+    display: flex;
+    justify-content: space-between;
+}
+#nom-footer{
+    font-family: 'Subscribers';
+    color:white;
+    font-size:100px;
+    text-align:center;
+    display: flex;
+    justify-content: right;
+    margin-top:20px;
+    margin-left:20px;
+}
+#onglets-footer1{
+    font-family: 'Marker SD';
+    color:white;
+    font-size: 30px;
+    display: flex;
+    text-align:center;
+    flex-direction: column;
+    margin-left:200px;
+    margin-top:30px;
+}
+#onglets-footer2{
+    font-family: 'Marker SD';
+    color:#CAB99F;
+    font-size: 22px;
+    display: flex;
+    text-align:center;
+    flex-direction: column;
+    margin-right:100px;
+    margin-top:10px;
+}
+.link-footer{
+    text-decoration:none;
+    color:#3E4036;
+    margin-bottom:-8px;
+}
+.link-footer:hover{
+    text-decoration: underline;
+    color: #7FA65B;
+}
+.link-footer1{
+    text-decoration:none;
+    color:#3E4036;
+}
+.link-footer1:hover{
+    text-decoration: underline;
+    color: #7FA65B;
+}
+/*---------TITRE COMMUN-------*/
+.titre-commun{
+    background-color:rgba(90, 144, 79, 0.603);
+    font-family: 'Subscribers';
+    font-size: 30px;
+    color:white;
+    border-radius:20px;
+    text-align:center;
+}
+
+/********************* Pages Présentation ****************/
+.presentation{
+    background-image:url("images/présentation.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display:flex;
+    flex-direction:column;
+    font-family: 'GeoSansLight';
+    font-size:20pt;
+}
+
+.presentation_bloc{
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: space-around;
+}
+
+.presentation_cat{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color:rgba(202,185,159,0.8);
+    border-radius:125px;
+    flex-basis: 40%;
+    margin-bottom:15px;
+    margin-top:15px;
+}
+
+.presentation_cat img{
+    width:250px;
+    height:250px;
+    border-radius:500px;
+}
+
+.presentation_cat aside{
+    text-align:center;
+    align-self: center;
+    flex-basis: 50%;
+}
+
+#cat{
+    color:#6B533A;
+    font-weight:bold;
+}
+
+.presentation_descri{
+    display:flex;
+    justify-content: center;
+}
+
+.presentation_descri p{
+    background-color:rgba(107,83,58,0.8);
+    text-align:center;
+    flex-basis:80%;
+    border-radius:20px;
+}
+
+/********************* Pages Légumes ****************/
+.legumes{
+    background-image:url("images/légumes.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display:flex;
+    flex-direction:column;
+    font-family: 'GeoSansLight';
+}
+
+.legumes_bloc{
+    display:flex;
+    flex-direction:column;
+    border-radius:20px;
+}
+
+.legumes_item{
+    display:flex;
+    flex-direction: row;
+    background-color:rgba(204,244,148,0.8);
+    width:50%;
+}
+
+.legumes_bloc img{
+    width:350px;
+    height:250px;
+    border-radius: 60% 10% 60% 10%;
+}
+
+.legumes_bloc aside{
+    align-self:center;
+    text-align:center;
+    flex-basis:50%;
+}
+
+.legumes_bloc h2{
+    font-family: 'Subscribers';
+    font-size:20pt;
+
+/********************* Pages Plantes ****************/
+.plantes{
+    background-image:url("images/plantes.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
