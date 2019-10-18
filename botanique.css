@@ -211,6 +211,7 @@ footer{
     margin-top:40px;
     margin-bottom: 20px;
     border-radius:15px;
+    opacity:0.5;
 }
 .fleur2{
     justify-content: space-between;
@@ -245,6 +246,10 @@ footer{
     color:black;
     border-radius: 15px;
     text-align:center;
+}
+.fleur1:hover{
+    opacity: 1;
+    transition: opacity 1s ease-out;
 }
 /*-------------ARBUSTES--------------*/
 #fond-arbustes{
