@@ -166,6 +166,20 @@ footer{
     font-size:20pt;
 }
 
+.presentation_descri{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color:rgba(255,255,255,0.6);
+    border-radius:350px 350px 20px 20px;
+}
+
+.presentation_descri p{
+    text-align:center;
+    flex-basis:80%;
+    border-radius:20px;
+}
+
 .presentation_bloc{
     display:flex;
     flex-direction: row;
@@ -178,15 +192,15 @@ footer{
     flex-direction: row;
     justify-content: space-around;
     background-color:rgba(202,185,159,0.8);
-    border-radius:125px;
+    border-radius:220px 20px 220px 20px;
     flex-basis: 40%;
-    margin-bottom:15px;
-    margin-top:15px;
+    margin-bottom:60px;
+    margin-top:60px;
 }
 
 .presentation_cat img{
-    width:250px;
-    height:250px;
+    width:200px;
+    height:200px;
     border-radius:500px;
 }
 
@@ -201,16 +215,35 @@ footer{
     font-weight:bold;
 }
 
-.presentation_descri{
+.presentation_infos{
     display:flex;
+    flex-direction: column;
     justify-content: center;
+    background-color:rgba(255,255,255,0.6);
+    border-radius:20px 20px 350px 350px;
+    margin-bottom:42px;
 }
 
-.presentation_descri p{
-    background-color:rgba(107,83,58,0.8);
+.presentation_infos p{
     text-align:center;
     flex-basis:80%;
     border-radius:20px;
+}
+
+.presentation_infos div{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+}
+
+.presentation_infos a#gamm{
+    align-self:center;
+    height:70px;
+}
+
+#pretapousser{
+    width:290;
+    height:150px;
 }
 
 /********************* Pages Légumes ****************/
@@ -224,34 +257,80 @@ footer{
     font-family: 'GeoSansLight';
 }
 
-.legumes_bloc{
-    display:flex;
-    flex-direction:column;
-    border-radius:20px;
-}
-
-.legumes_item{
+#legumes_titre1{
     display:flex;
     flex-direction: row;
-    background-color:rgba(204,244,148,0.8);
-    width:50%;
+    justify-content: space-between;
 }
 
-.legumes_bloc img{
-    width:350px;
-    height:250px;
-    border-radius: 60% 10% 60% 10%;
+#legumes_titre2{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
-.legumes_bloc aside{
+#legumes_titre3{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#legumes_titre1 a, #legumes_titre2 a, #legumes_titre3 a{
+    background-color : rgba(107,83,58,0.6);
+    flex-grow:0.05;
+    text-align:center;
+    border-radius:20px;
+    text-decoration:none;
+    color:black;
+    font-size:10pt;
+}
+
+.legumes_cat{
+    display:flex;
+    flex-direction:column;
+    margin-top:20px;
+}
+
+.legumes_fiche{
+    display:flex;
+    flex-direction: row;
+    align-items:flex-start;
+    margin-bottom:20px;
+}
+
+.legumes_fiche div{
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+    background-color:rgba(204,224,148,0.6);
+    flex-basis:50%;
+    border-radius:50px;
+    font-size:20pt;
+}
+
+#g {
+    justify-content: flex-start;
+}
+
+#d {
+    justify-content: flex-end;
+}
+
+.legumes_fiche img{
+    width:200px;
+    height:200px;
+    border-radius:50px;
+}
+
+.legumes_fiche aside{
     align-self:center;
     text-align:center;
-    flex-basis:50%;
 }
-
-.legumes_bloc h2{
+.legumes_fiche aside h2{
     font-family: 'Subscribers';
-    font-size:20pt;
+    font-size:50pt;
+    margin:0;
+}
 
 /********************* Pages Plantes ****************/
 .plantes{
@@ -259,4 +338,68 @@ footer{
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    display:flex;
+    flex-direction:column;
+    font-family: 'GeoSansLight';
+}
+
+#plantes_titre1{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#plantes_titre2{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#plantes_titre3{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#plantes_titre1 a, #plantes_titre2 a, #plantes_titre3 a{
+    border-radius:20px;
+    text-decoration:none;
+    color:black;
+}
+
+#plantes_titre1 img, #plantes_titre2 img, #plantes_titre3 img{
+    width:50px;
+    height:50px;
+    border-radius:200px;
+    border:10px solid rgb(107,83,58);
+}
+
+.plantes_bloc{
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: space-around;
+}
+
+.plantes_cat{
+    display:flex;
+    flex-direction: row;
+    background-color:rgba(202,185,159,0.8);
+    border-radius:125px;
+    flex-basis: 28%;
+    margin-bottom:60px;
+    margin-top:60px;
+}
+
+.plantes_cat img{
+    align-self:center;
+    width:550px;
+    height:500px;
+    border-radius:125px;
+}
+
+.plantes_cat aside{
+    text-align:center;
+    align-self: center;
+    font-size:20pt;
 }
