@@ -1,4 +1,6 @@
-/*---------------POLICES----------------*/
+
+/********************* Polices ****************/
+
 @font-face{
     font-family: 'GeoSansLight';
     src: url('polices/GeosansLight.ttf') format('TrueType');
@@ -145,11 +147,337 @@ footer{
 }
 /*---------TITRE COMMUN-------*/
 .titre-commun{
+    display:flex;
+    justify-content: center;
+    text-align: center;
     background-color:rgba(90, 144, 79, 0.603);
     font-family: 'Subscribers';
     font-size: 30px;
     color:white;
     border-radius:20px;
+    margin-bottom : 42px;
+    margin-top:42px;
+}
+
+.titre-commun h1{
+    flex-basis:30%;
+    margin:0;
+    letter-spacing: 4px;
+    animation: titre 6s infinite alternate ease-in-out;
+}
+
+/********************* Pages Présentation ****************/
+.presentation{
+    background-image:url("images/présentation.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display:flex;
+    flex-direction:column;
+    font-family: 'GeoSansLight';
+    font-size:20pt;
+}
+
+.presentation_descri{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color:rgba(255,255,255,0.6);
+    border-radius:350px 350px 20px 20px;
+}
+
+.presentation_descri p{
+    text-align:center;
+    flex-basis:80%;
+    border-radius:20px;
+}
+
+.presentation_descri p#top{
+    font-weight:bold;
+    font-size:30pt;
+    animation: present_bloc 4s 1 0s ease-in-out;
+}
+
+.presentation_bloc{
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: space-around;
+}
+
+.presentation_cat{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color:rgba(202,185,159,0.8);
+    border-radius:220px 20px 220px 20px;
+    flex-basis: 40%;
+    margin-bottom:60px;
+    margin-top:60px;
+}
+
+.presentation_cat:hover{
+    box-shadow:60px -16px rgb(107,83,58);
+}
+
+.presentation_cat img{
+    width:200px;
+    height:200px;
+    border-radius:500px;
+}
+
+.presentation_cat aside{
+    text-align:center;
+    align-self: center;
+    flex-basis: 50%;
+}
+
+#cat{
+    color:#6B533A;
+    font-weight:bold;
+}
+
+.presentation_infos{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color:rgba(255,255,255,0.6);
+    border-radius:20px 20px 350px 350px;
+    margin-bottom:42px;
+}
+
+.presentation_infos p{
+    text-align:center;
+    flex-basis:80%;
+    border-radius:20px;
+}
+
+.presentation_infos div{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+}
+
+.presentation_infos a#gamm{
+    align-self:center;
+    height:70px;
+}
+
+#pretapousser{
+    width:290;
+    height:150px;
+}
+
+/********************* Pages Légumes ****************/
+.legumes{
+    background-image:url("images/légumes.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display:flex;
+    flex-direction:column;
+    font-family: 'GeoSansLight';
+}
+
+#legumes_titre1{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    animation: soustitre 3s 1 ease-in-out;
+}
+
+#legumes_titre2{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    animation: soustitre 5s 1 ease-in-out;
+}
+
+#legumes_titre3{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    animation: soustitre 7s 1 ease-in-out;
+}
+
+#legumes_titre1 a, #legumes_titre2 a, #legumes_titre3 a{
+    background-color : rgba(107,83,58,0.6);
+    flex-grow:0.05;
+    text-align:center;
+    border-radius:20px;
+    text-decoration:none;
+    color:black;
+    font-size:10pt;
+}
+
+.legumes_cat{
+    display:flex;
+    flex-direction:column;
+    margin-top:20px;
+}
+
+.legumes_fiche{
+    display:flex;
+    flex-direction: row;
+    align-items:flex-start;
+    margin-bottom:20px;
+}
+
+.legumes_fiche div{
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+    background-color:rgba(204,224,148,0.6);
+    flex-basis:60%;
+    border-radius:50px;
+    font-size:20pt;
+}
+
+.g:hover{
+    box-shadow:10px 5px 5px #5A904F;
+}
+
+.d:hover{
+    box-shadow:-10px -5px 5px #5A904F;
+}
+
+#g {
+    justify-content: flex-start;
+}
+
+#d {
+    justify-content: flex-end;
+}
+
+.legumes_fiche img{
+    width:250px;
+    height:250px;
+    border-radius:50px;
+    margin:15px;
+}
+
+.legumes_fiche aside{
+    align-self:center;
+    text-align:center;
+}
+.legumes_fiche aside h2{
+    font-family: 'Subscribers';
+    font-size:50pt;
+    margin:0;
+}
+
+/********************* Pages Plantes ****************/
+.plantes{
+    background-image:url("images/plantes.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display:flex;
+    flex-direction:column;
+    font-family: 'GeoSansLight';
+}
+
+#plantes_titre1{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    animation: soustitre 3s 1 ease-in-out;
+}
+
+#plantes_titre2{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    animation: soustitre 5s 1 ease-in-out;
+}
+
+#plantes_titre3{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    animation: soustitre 7s 1 ease-in-out;
+}
+
+#plantes_titre1 img, #plantes_titre2 img, #plantes_titre3 img{
+    width:70px;
+    height:70px;
+    border-radius:200px;
+}
+
+#plantes_titre1 img:hover, #plantes_titre2 img:hover, #plantes_titre3 img:hover{
+    box-shadow:5px -5px 5px #6B533A;
+}
+
+.plantes_bloc{
+    display:flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: space-around;
+}
+
+.plantes_cat{
+    background-color:rgba(202,185,159,0.8);
+    border-radius:125px;
+    flex-basis: 28%;
+    margin-bottom:60px;
+    margin-top:60px;
+}
+
+.plantes_cat h2:hover{
+    text-shadow:#5A904F 1px 0 10px;
+}
+
+.plantes_cat img{
+    align-self:center;
+    width:550px;
+    height:500px;
+    border-radius:125px;
+}
+
+.plantes_cat aside{
+    text-align:center;
+    align-self: center;
+    font-size:20pt;
+}
+
+/******** Animations *********/
+@keyframes present_bloc{
+    0%{
+        transform: translateY(150px);
+        opacity: 0;
+        }
+    50%{
+        transform: translateY(50px);
+        opacity: 0;
+        }
+    100%{
+        opacity: 1;
+        }
+}
+
+@keyframes titre{
+    0%{
+        transform: translateX(300px);
+        }
+    50%{
+        }
+    100%{
+        transform: translateX(-300px);
+        opacity: 1;
+        }
+}
+
+@keyframes soustitre{
+    0%{
+        opacity:0;
+    }
+    50%{
+        opacity:0;
+    }
+    100%{
+        opacity:1;
+    }
+}
     text-align:center;
 }
 /*------------ACCUEIL----------*/
@@ -316,4 +644,3 @@ footer{
     flex-direction: row;
     justify-content: space-between;
 }
-
