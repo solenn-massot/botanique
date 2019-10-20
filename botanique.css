@@ -152,4 +152,168 @@ footer{
     border-radius:20px;
     text-align:center;
 }
+/*------------ACCUEIL----------*/
+#fond-accueil{
+    background-image: url("images/accueil.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#bienvenue-accueil{
+    background-color:rgba(255, 255, 255, 0.5);
+    padding-left:20px;
+    margin-bottom: 40px;
+    border-radius:15px;
+    padding-right:20px;
+}
+#titre-accueil{
+    font-family: 'Subscribers';
+    font-size:60px;
+    padding-top:30px;
+}
+#texte-accueil{
+    font-family: 'GeoSansLight';
+    font-size: 30px;
+}
+#texte-accueil2{
+    font-family: 'GeoSansLight';
+    font-size: 30px;
+    display: block;
+    text-align:center;
+    padding-top:20px;
+    padding-bottom: 20px;
+}
+.link-accueil{
+    text-decoration:none;
+    color:black;
+}
+.link-accueil:hover{
+    text-decoration:underline;
+    color:#5A904F;
+}
+.link-accueil:visited{
+    color:#5A904F;;
+}
+/*--------------FLEURS------------*/
+#fond-fleurs{
+    background-image:url("images/fleurs.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.fleur1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color:rgba(255, 255, 255, 0.5);
+    margin-top:40px;
+    margin-bottom: 20px;
+    border-radius:15px;
+    opacity:0.5;
+}
+.fleur2{
+    justify-content: space-between;
+    flex-direction: column;
+}
+.img-fleurs2{
+    width:150px;
+    height:auto;
+}
+.titre-fleurs{
+    margin-bottom:-20px;
+    margin-top:10px;
+    padding-left:10px;
+    font-family: 'Subscribers';
+    font-size:70px;
+}
+.titre-fleurs-scientifique{
+    font-family: 'GeoSansLight';
+    font-size:20px;
+    padding-left:10px;
+}
+.texte-fleurs{
+    font-family: 'GeoSansLight';
+    font-size:20px;
+    padding-left:30px;
+    margin-top:10px;
+}
+#description-fleur{
+    font-family: 'GeoSansLight';
+    font-size:20px;
+    background-color:rgba(255, 255, 255, 0.5);
+    color:black;
+    border-radius: 15px;
+    text-align:center;
+}
+.fleur1:hover{
+    opacity: 1;
+    transition: opacity 1s ease-out;
+}
+/*-------------ARBUSTES--------------*/
+#fond-arbustes{
+    background-image:url("images/arbuste.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#description-arbustes{
+    font-family: 'GeoSansLight';
+    font-size:20px;
+    background-color:rgba(255, 255, 255, 0.5);
+    color:black;
+    border-radius: 15px;
+    text-align:center;
+}
+.arbuste {
+    width:300px;
+    height:450px;
+    position:relative;
+  }
+  
+  .img-arbuste {
+    width:100%;
+    height:450px;
+    vertical-align:top;
+  }
+  
+  .caption-arbuste {
+      height:100%;
+  transition:all 1s;
+  opacity:0;
+  background-color: rgba(255, 255, 255, 0.75) ;
+  text-align:center;
+  position:absolute;
+  bottom:0;
+    left:0;
+  right:0;
+  }
+  
+  .arbuste:hover .caption-arbuste {
+  opacity:1;
+  }
+
+  .titre-arbuste{
+    font-family: 'Subscribers';
+    font-size:4em;
+    text-decoration: underline;
+    margin-bottom: -10px;
+    margin-top:17px;
+  }
+  .titre-arbuste2{
+    font-family: 'Subscribers';
+    font-size:40px;
+    font-style: italic;
+  }
+  .arbuste{
+    font-family: 'GeoSansLight';
+    font-size:18px;
+  }
+.contain-arbuste1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
